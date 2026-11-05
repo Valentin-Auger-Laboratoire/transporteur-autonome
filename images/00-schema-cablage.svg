@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" font-family="Segoe UI, Arial, sans-serif" font-size="14">
+  <title>Schéma de câblage du transporteur autonome (programme final)</title>
+  <rect width="900" height="560" fill="#ffffff"/>
+  <defs>
+    <marker id="pt" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6"><circle cx="5" cy="5" r="4" fill="#222"/></marker>
+  </defs>
+
+  <text x="450" y="32" text-anchor="middle" font-size="19" font-weight="600" fill="#111">Câblage du programme final</text>
+
+  <!-- Carte -->
+  <rect x="300" y="150" width="300" height="230" rx="8" fill="#e9eef5" stroke="#3b5b85" stroke-width="2"/>
+  <text x="450" y="176" text-anchor="middle" font-weight="600" fill="#1f3550">Arduino Uno</text>
+  <text x="450" y="196" text-anchor="middle" fill="#1f3550">+ shield moteur (canaux A / B)</text>
+  <text x="450" y="216" text-anchor="middle" fill="#1f3550">+ shield Grove</text>
+
+  <!-- broches côté droit -->
+  <g fill="#111">
+    <text x="588" y="252" text-anchor="end">D6</text>
+    <text x="588" y="292" text-anchor="end">D8</text>
+    <text x="588" y="332" text-anchor="end">D4</text>
+    <text x="588" y="372" text-anchor="end">D2</text>
+  </g>
+  <!-- broches côté bas -->
+  <g fill="#111" text-anchor="middle">
+    <text x="360" y="372">D13 · D11</text>
+    <text x="360" y="356" font-size="12" fill="#555">canal B</text>
+    <text x="480" y="372">D12 · D3</text>
+    <text x="480" y="356" font-size="12" fill="#555">canal A</text>
+  </g>
+  <!-- broche côté gauche -->
+  <text x="312" y="270" fill="#111">VIN / bornier</text>
+
+  <!-- Capteurs à droite -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <line x1="600" y1="247" x2="680" y2="247"/>
+    <line x1="600" y1="287" x2="680" y2="287"/>
+    <line x1="600" y1="327" x2="680" y2="327"/>
+    <line x1="600" y1="367" x2="680" y2="367"/>
+  </g>
+  <g>
+    <rect x="680" y="230" width="190" height="34" rx="5" fill="#fff6dc" stroke="#b08a1e"/>
+    <text x="775" y="252" text-anchor="middle">Ultrasons Grove (≤ 15 cm)</text>
+    <rect x="680" y="270" width="190" height="34" rx="5" fill="#eaf6ea" stroke="#3c8a3c"/>
+    <text x="775" y="292" text-anchor="middle">Capteur IR ligne gauche</text>
+    <rect x="680" y="310" width="190" height="34" rx="5" fill="#eaf6ea" stroke="#3c8a3c"/>
+    <text x="775" y="332" text-anchor="middle">Capteur IR ligne droit</text>
+    <rect x="680" y="350" width="190" height="34" rx="5" fill="#fde8e8" stroke="#c8102e"/>
+    <circle cx="700" cy="367" r="7" fill="#c8102e"/>
+    <text x="785" y="372" text-anchor="middle">LED rouge + résistance</text>
+  </g>
+
+  <!-- Moteurs en bas -->
+  <g stroke="#222" stroke-width="2" fill="none">
+    <line x1="360" y1="380" x2="360" y2="450"/>
+    <line x1="480" y1="380" x2="480" y2="450"/>
+  </g>
+  <rect x="270" y="450" width="180" height="56" rx="6" fill="#fff3c4" stroke="#b08a1e"/>
+  <text x="360" y="474" text-anchor="middle" font-weight="600">Moteur gauche (B)</text>
+  <text x="360" y="494" text-anchor="middle" font-size="12" fill="#555">motoréducteur TT</text>
+  <rect x="450" y="450" width="180" height="56" rx="6" fill="#fff3c4" stroke="#b08a1e" transform="translate(10 0)"/>
+  <text x="550" y="474" text-anchor="middle" font-weight="600">Moteur droit (A)</text>
+  <text x="550" y="494" text-anchor="middle" font-size="12" fill="#555">motoréducteur TT</text>
+
+  <!-- Pile à gauche -->
+  <rect x="60" y="240" width="140" height="60" rx="6" fill="#f0f0f0" stroke="#555"/>
+  <text x="130" y="266" text-anchor="middle" font-weight="600">Pile 9 V</text>
+  <text x="130" y="286" text-anchor="middle" font-size="12" fill="#555">PWM max 141 / 255</text>
+  <g stroke-width="2" fill="none">
+    <line x1="200" y1="258" x2="300" y2="258" stroke="#c8102e"/>
+    <line x1="200" y1="282" x2="300" y2="282" stroke="#222"/>
+  </g>
+  <text x="250" y="252" text-anchor="middle" font-size="12" fill="#c8102e">+</text>
+  <text x="250" y="298" text-anchor="middle" font-size="12">−</text>
+
+  <text x="450" y="540" text-anchor="middle" font-size="12" fill="#555">Brochage déduit du code de 2022. Détail des broches : docs/brochage.md</text>
+</svg>
