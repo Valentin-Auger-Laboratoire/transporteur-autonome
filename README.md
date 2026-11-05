@@ -2,6 +2,9 @@
 
 🇫🇷 [Français](#français) · 🇬🇧 [English](#english)
 
+**▶ Démo web / Web demo :** https://valentin-auger-laboratoire.github.io/portfolio/demos/transporteur-autonome/
+Mon programme de 2022 rejoué en simulation, comparé à une version corrigée. / My 2022 program replayed in a simulation, next to a corrected version.
+
 ![Essai du montage sur table](images/06-essai-sur-table.gif)
 
 ---
